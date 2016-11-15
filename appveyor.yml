@@ -1,0 +1,8 @@
+install:
+  - mvn install --quiet -DskipTests=true -Dgpg.skip=true
+
+test_script:
+  - mvn android:lint
+  - mvn test
+
+build: off
